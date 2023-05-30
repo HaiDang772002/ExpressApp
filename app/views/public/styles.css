@@ -1,0 +1,51 @@
+a:link {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:visited:hover {
+    color: red;
+}
+
+form input[type='text'][name='address'] {
+    display: inline-block;
+    width: 500px;
+}
+
+form input[type='number'] {
+    display: inline-block;
+    width: 40px;
+}
+
+form input[type='text'][name='username'] {
+    display: inline-block;
+    width: 160px;
+}
+
+form input[type='password'][name='password'] {
+    display: inline-block;
+    width: 160px;
+}
+
+form label {
+    display: inline-block;
+    width: 70px;
+}
+
+.delete_btn {
+    color: red;
+    padding-left: 20px;
+    cursor: default;
+}
+
+.detail_btn {
+    color: greenyellow;
+    cursor: default;
+}

@@ -1,0 +1,21 @@
+<nav>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <h1 style="margin-top: 0;"><a style="text-decoration: none;color: orange;" href="/users">USER
+                MANAGEMENT</a>
+        </h1>
+        <span data-href="/login/logout" class="logout_btn"
+            style="text-decoration: none;cursor: pointer;color: blue;">Logout</span>
+    </div>
+    <a href="/users/all" style="color: orange;">
+        <span>ALL_USER</span>
+    </a>
+    <a href="/users/create" style="color: orange;">
+        <span style="margin-left: 20px;">CREATE_USER</span>
+    </a>
+</nav>
+<script>
+    const logout_btn = document.querySelector('span.logout_btn')
+    logout_btn.addEventListener('click', () => {
+        window.location.href = logout_btn.getAttribute('data-href')
+    })
+</script>
